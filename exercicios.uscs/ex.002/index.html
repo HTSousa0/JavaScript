@@ -1,13 +1,18 @@
 <html>
+    <style>
+        html, body {
+            background: white url(../imagens/imagemexercicio2.PNG) center no-repeat ;
+        }
+    </style>
     <body>
         <script>
-            let velatual = +promopt('Digite sua velocidade atual: ')
-            let velmax = +prompt('Digite a velocidade máxima:')
-            if (velatual > velmax) {
+            let velAtual = +prompt('Digite sua velocidade atual: ')
+            let velMax = +prompt('Digite a velocidade máxima:')
+            if (velAtual > velMax) {
                 console.log ('Você foi multado')
             }
             else {
-                ('Não foi multado')
+                console.log('Não foi multado')
             }
         </script>
     </body>
