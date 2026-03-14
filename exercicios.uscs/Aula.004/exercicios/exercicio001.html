@@ -1,26 +1,28 @@
 <html>
+
 <body>
-<script>
+    <script>
 
 
-let area = +prompt("Digite o tamanho da área em metros quadrados:");
+        let area = +prompt("Digite o tamanho da área em metros quadrados:");
 
-let litros = area / 3;
+        let litros = area / 3;
 
-let latas = litros / 18;
+        let latas = litros / 18;
 
-if (litros % 18 != 0) {
-    latas = +(latas) + 1;
-} else {
-    latas = +(latas);
-}
+        if (litros % 18 != 0) {
+            latas = +(latas) + 1;
+        } else {
+            latas = +(latas);
+        }
 
-let preco = latas * 80;
+        let preco = latas * 80;
 
-console.log("Quantidade de latas necessárias: " + latas);
-console.log("Preço total: R$ " + preco);
+        console.log("Quantidade de latas necessárias: " + latas);
+        console.log("Preço total: R$ " + preco);
 
-</script>
-    
+    </script>
+
 </body>
+
 </html>

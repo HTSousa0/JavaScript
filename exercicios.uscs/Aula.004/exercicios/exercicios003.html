@@ -1,17 +1,53 @@
 <html>
-    <body>
-        <script>
-            let numero1 = + float("Digite um número")
-            let numero2 = + float ("Digite outro número")
 
-            console.log ("Qual operação você deseja realizar?")
+<body>
+    <script>
+        let numero1 = +prompt("Digite um número")
+        let numero2 = +prompt("Digite outro número")
 
-            soma = numero1 + numero2 
-            soma = soma / 1 
-            subtração = numero1 - numero2
-            multiplicação = numero1 * numero2
-            divisão = numero / numero2
-            
-        </script>
-    </body>
+        let operacao = prompt("Qual operação você deseja realizar? (soma, subtração, divisão ou multiplicação)")
+
+        let resultado
+
+        if (operacao == "soma") {
+            resultado = numero1 + numero2
+            console.log("O resultado da soma é:", resultado)
+
+        } else if (operacao == "subtração") {
+            resultado = numero1 - numero2
+            console.log("O resultado da subtração é:", resultado)
+
+        } else if (operacao == "divisão") {
+            resultado = numero1 / numero2
+            console.log("O resultado da divisão é:", resultado)
+
+        } else if (operacao == "multiplicação") {
+            resultado = numero1 * numero2
+            console.log("O resultado da multiplicação é:", resultado)
+
+        } else {
+            console.log("Operação inválida")
+        }
+
+        if (resultado % 2 == 0) {
+            console.log("O número é par")
+        } else {
+            console.log("O número é ímpar")
+        }
+
+        if (resultado >= 0) {
+            console.log("O número é positivo")
+        } else {
+            console.log("O número é negativo")
+        }
+
+        if (resultado % 1 == 0) {
+            console.log("O número é inteiro")
+        } else {
+            console.log("O número é decimal")
+        }
+
+    </script>
+</body>
+
 </html>
