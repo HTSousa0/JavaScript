@@ -10,7 +10,7 @@ while (rodando === true) {
         saldo = saldo - custo;
         document.getElementById("resultado").innerHTML = "Produto adicionado ao carrinho. Saldo restante: " + saldo;
     } else {
-        document.getElementById("resultado").innerHTML = "Saldo insuficiente para adicionar este produto ao carrinho.";
+        document.getElementById("resultado2").innerHTML = "Saldo insuficiente para adicionar este produto ao carrinho.";
         rodando = false;
     }
 }
