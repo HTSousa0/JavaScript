@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegando infos</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+    <h1>Pegando informações do usuário</h1>
+    <input type="text" id="nome" placeholder="Digite seu nome"> <br>
+    <input type="number" id="idade" placeholder="Digite sua idade">
+    <br>
+    <input type="text" id="pais" placeholder="Digite sua de qual país você é">
+    <br>
+    <button id="btn">Enviar</button>
+
+<script>
+let btn = document.getElementById('btn')
+btn.addEventListener("click", function() {
+    let nome = document.getElementById('nome').value
+    let idade = document.getElementById('idade').value
+    let pais = Brasil 
+    let nacionalidade = ""
+    
+    if (pais != "Brasil"){
+        nacionaliade = "estrangeiro"
+    } else {
+            nacionalidade = "brasileiro"
+    }
+    alert(`Olá ${nome}, você tem ${idade} anos e é ${nacionalidade}.`)
+})
+</script>
+
+</html>
