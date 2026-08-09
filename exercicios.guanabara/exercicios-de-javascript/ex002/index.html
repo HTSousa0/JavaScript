@@ -14,19 +14,24 @@
     <section>
         <div id="container">
             <div id="area">
-                <label for="txtdata">Data de nascimento: </label>
-                <input type="date" name="txtdata" id="txtdata">
+                <label for="txtano">Ano de nascimento: </label>
+                <input type="text" name="txtano" id="txtano">
                 <br>
-
-                <label for="txtsexo">Sexo: </label>
-                <input type="radio" name="radmas" id="radmas" >
+                <label for="radsex">Sexo: </label>
+                <input type="radio" name="radsex" id="radmas" >
                 <label for="radmas"> Masculino</label>
-                <br>
-                <input type="radio" name="radfem" id="radfem" > 
+                <input type="radio" name="radsex" id="radfem" > 
                 <label for="radfem"> Feminino</label>
                 <br>
-                <input type="submit" value="Enviar" onclick="verificar()">
-                <p> Preencha os campos acima e clique em enviar para verificar sua idade e sexo.</p>
+
+                <p>
+                    <input type="submit" value="Enviar" onclick="verificar()">
+                </p>
+
+                <div id="res">
+                    Preencha os campos acima e clique em enviar
+
+                </div>
             </div>
         </div>
     </section>
