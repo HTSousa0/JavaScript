@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Projetos</h1>
+    </header>
+
+    <section>
+        <div id="container">
+            <div id="area">
+                <label for="txtdata">Data de nascimento: </label>
+                <input type="date" name="txtdata" id="txtdata">
+                <br>
+
+                <label for="txtsexo">Sexo: </label>
+                <input type="radio" name="radmas" id="radmas" >
+                <label for="radmas"> Masculino</label>
+                <br>
+                <input type="radio" name="radfem" id="radfem" > 
+                <label for="radfem"> Feminino</label>
+                <br>
+                <input type="submit" value="Enviar" onclick="verificar()">
+                <p> Preencha os campos acima e clique em enviar para verificar sua idade e sexo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="todos">&copy; 2026 Henrique. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
